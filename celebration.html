@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celebration — Birthday</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <canvas id="confettiCanvas"></canvas>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🎂 Birthday</a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="memories.html">Memories</a></li>
+        <li><a href="wishes.html">Wishes</a></li>
+        <li><a href="celebration.html" class="active">Celebration</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="celebration-main">
+
+    <!-- Gift Box -->
+    <div class="surprise-box" id="surpriseBox">
+
+      <div class="gift-box" id="giftBox">
+
+        <div class="gift-lid">
+          <div class="gift-bow"></div>
+        </div>
+
+        <div class="gift-body">
+          <div class="gift-ribbon-v"></div>
+          <div class="gift-ribbon-h"></div>
+        </div>
+
+      </div>
+
+      <p class="surprise-hint">
+        🎁 Click the gift to open your birthday surprise!
+      </p>
+
+    </div>
+
+    <!-- Reveal -->
+    <div class="surprise-reveal hidden" id="surpriseReveal">
+
+      <h1 class="surprise-title">
+        🎉 Happy Birthday Bhai! 🎉
+      </h1>
+
+      <p class="surprise-message">
+        Today is not just another day. It's a celebration of the amazing
+        brother, son and friend you are.
+      </p>
+
+      <p class="surprise-message">
+        Thank you for every laugh, every lesson, every memory and every
+        moment you've shared with us.
+      </p>
+
+      <div class="balloons">
+        <span class="balloon">🎈</span>
+        <span class="balloon">🎈</span>
+        <span class="balloon">🎈</span>
+        <span class="balloon">🎈</span>
+        <span class="balloon">🎈</span>
+      </div>
+
+      <div class="celebration-card">
+
+        <h2>❤️ Let's Cut The Cake ❤️</h2>
+
+            <div class="wish-author">
+              <div class="wish-author-info">
+                <div class="video-container">
+                  <video controls>
+                    <source src="thumbnails/Man_cutting_birthday_cake_202606202140.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+
+      </div>
+
+      <div class="action-buttons">
+        <button class="btn btn-primary" id="celebrateBtn">
+          🎊 Celebrate Again
+        </button>
+
+        <a href="index.html" class="btn btn-outline">
+          🏠 Back Home
+        </a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="memories.html">Memories</a>
+        <a href="wishes.html">Wishes</a>
+        <a href="celebration.html">Celebration</a>
+      </nav>
+
+      <p>
+        Made with <span class="heart">♥</span>
+        for the best brother in the world
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
