@@ -1,7 +1,3 @@
-/* ============================================
-   Birthday Website — Shared Styles
-   ============================================ */
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
 :root {
@@ -46,7 +42,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ---- Typography ---- */
+
 h1, h2, h3, h4 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
@@ -72,7 +68,7 @@ img {
   display: block;
 }
 
-/* ---- Navigation ---- */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -133,7 +129,7 @@ img {
   color: var(--accent-gold);
 }
 
-/* Mobile nav toggle */
+
 .nav-toggle {
   display: none;
   background: none;
@@ -152,7 +148,7 @@ img {
   border-radius: 2px;
 }
 
-/* ---- Layout ---- */
+
 .page-wrapper {
   padding-top: var(--nav-height);
 }
@@ -188,7 +184,7 @@ img {
   margin: 1rem auto 0;
 }
 
-/* ---- Hero ---- */
+
 .hero {
   min-height: calc(100vh - var(--nav-height));
   display: flex;
@@ -288,7 +284,7 @@ img {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ---- Buttons ---- */
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -326,7 +322,7 @@ img {
   background: rgba(245, 197, 66, 0.05);
 }
 
-/* Quick Link Cards */
+
 
 .quick-links {
     display: grid;
@@ -392,7 +388,6 @@ img {
     font-size: 0.95rem;
 }
 
-/* Mobile */
 
 @media (max-width: 768px) {
     .quick-links {
@@ -404,7 +399,7 @@ img {
     }
 }
 
-/* ---- Cards ---- */
+
 .card {
   background: var(--bg-card);
   border: 1px solid rgba(255, 255, 255, 0.06);
@@ -440,7 +435,7 @@ img {
   margin-bottom: 0.75rem;
 }
 
-/* ---- Grid layouts ---- */
+
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -459,7 +454,7 @@ img {
   gap: 1.5rem;
 }
 
-/* ---- Page header (inner pages) ---- */
+
 .page-hero {
   padding: 5rem 0 3rem;
   text-align: center;
@@ -476,7 +471,7 @@ img {
   margin: 0 auto;
 }
 
-/* ---- About page ---- */
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -546,7 +541,7 @@ img {
   margin-top: 0.25rem;
 }
 
-/* ---- Traits / fun facts ---- */
+
 .trait-list {
   list-style: none;
   display: flex;
@@ -586,7 +581,7 @@ img {
   color: var(--text-secondary);
 }
 
-/* ---- Gallery / Memories ---- */
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -656,7 +651,6 @@ img {
   margin-top: 0.25rem;
 }
 
-/* Timeline */
 .timeline {
   position: relative;
   max-width: 700px;
@@ -705,7 +699,7 @@ img {
   margin-bottom: 0.5rem;
 }
 
-/* ---- Wishes page ---- */
+
 .wish-card {
   aspect-ratio: 2/5;
   background: var(--bg-card);
@@ -772,7 +766,6 @@ img {
   color: var(--text-muted);
 }
 
-/* Letter section */
 .letter-box {
   max-width: 700px;
   margin: 0 auto;
@@ -816,9 +809,6 @@ img {
 }
 
 
-/* =========================
-   Surprise Page
-========================= */
 
 .surprise-page {
     background: var(--gradient-hero);
@@ -839,7 +829,6 @@ img {
     z-index: 2;
 }
 
-/* Gift Box Container */
 .surprise-box {
     display: flex;
     flex-direction: column;
@@ -847,7 +836,7 @@ img {
     animation: fadeInUp 1s ease;
 }
 
-/* Gift Box */
+
 .gift-box {
     position: relative;
     width: 220px;
@@ -860,7 +849,6 @@ img {
     transform: scale(1.08);
 }
 
-/* Box Body */
 .gift-body {
     width: 220px;
     height: 170px;
@@ -875,7 +863,6 @@ img {
     box-shadow: var(--shadow-soft);
 }
 
-/* Box Lid */
 .gift-lid {
     width: 240px;
     height: 55px;
@@ -889,7 +876,6 @@ img {
     box-shadow: 0 8px 25px rgba(245,197,66,.3);
 }
 
-/* Ribbon */
 .gift-ribbon-v {
     position: absolute;
     left: 50%;
@@ -907,7 +893,6 @@ img {
     background: var(--gradient-gold);
 }
 
-/* Bow */
 .gift-bow {
     position: absolute;
     top: -25px;
@@ -937,7 +922,6 @@ img {
     transform: rotate(135deg);
 }
 
-/* Hint */
 .surprise-hint {
     margin-top: 40px;
     color: var(--text-secondary);
@@ -945,7 +929,6 @@ img {
     animation: pulse 2s infinite;
 }
 
-/* Reveal Section */
 .surprise-reveal {
     max-width: 700px;
     background: var(--bg-card);
@@ -960,7 +943,6 @@ img {
     display: none;
 }
 
-/* Title */
 .surprise-title {
     font-size: clamp(2.5rem, 6vw, 4rem);
     margin-bottom: 1rem;
@@ -970,7 +952,6 @@ img {
     -webkit-text-fill-color: transparent;
 }
 
-/* Message */
 .surprise-message {
     color: var(--text-secondary);
     font-size: 1.15rem;
@@ -978,7 +959,6 @@ img {
     margin: 0 auto 2rem;
 }
 
-/* Balloons */
 .balloons {
     display: flex;
     justify-content: center;
@@ -992,7 +972,6 @@ img {
     animation-delay: var(--delay);
 }
 
-/* Buttons */
 .btn-secondary {
     background: transparent;
     border: 1px solid rgba(255,255,255,.15);
@@ -1005,12 +984,10 @@ img {
     color: var(--accent-gold);
 }
 
-/* Open Animation */
 .gift-box.open .gift-lid {
     transform: translateY(-120px) rotate(-15deg);
 }
 
-/* Floating Background Glow */
 .surprise-page::before {
     content: "";
     position: fixed;
@@ -1043,7 +1020,6 @@ img {
     z-index: 0;
 }
 
-/* Animations */
 @keyframes pulse {
     0%,100% {
         opacity: 1;
@@ -1112,7 +1088,6 @@ img {
 }
 
 
-/* ---- Footer ---- */
 .footer {
   padding: 3rem 0;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
@@ -1147,8 +1122,6 @@ img {
 }
 
 
-
-/* ---- Responsive ---- */
 @media (max-width: 1024px) {
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .quick-links { grid-template-columns: repeat(2, 1fr); }
@@ -1206,10 +1179,6 @@ img {
 }
 
 
-/* =========================
-   CELEBRATION PAGE
-========================= */
-
 #confettiCanvas {
   position: fixed;
   inset: 0;
@@ -1238,7 +1207,7 @@ img {
   width: 100%;
 }
 
-/* Gift Box */
+
 
 .gift-box {
   width: 220px;
@@ -1318,7 +1287,7 @@ img {
   transform: translateY(-130px) rotate(-15deg);
 }
 
-/* Text */
+
 
 .surprise-hint {
   margin-top: 2rem;
@@ -1338,7 +1307,6 @@ img {
   margin-bottom: 1rem;
 }
 
-/* Reveal Card */
 
 .celebration-card {
   margin-top: 2rem;
@@ -1349,7 +1317,7 @@ img {
   backdrop-filter: blur(10px);
 }
 
-/* Balloons */
+
 
 .balloons {
   margin: 2rem 0;
@@ -1373,7 +1341,7 @@ img {
   }
 }
 
-/* Buttons */
+
 
 .action-buttons {
   margin-top: 2rem;
@@ -1383,7 +1351,7 @@ img {
   flex-wrap: wrap;
 }
 
-/* Reveal Animation */
+
 
 .surprise-reveal {
   animation: reveal .8s ease;
@@ -1400,7 +1368,7 @@ img {
   }
 }
 
-/* Mobile */
+
 
 @media (max-width:768px){
 
